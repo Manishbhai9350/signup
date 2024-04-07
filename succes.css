@@ -1,0 +1,137 @@
+*{ 
+padding:0;  box-sizing:border-box;
+margin:0;
+box-sizing:border-box
+}
+html , body {
+width:100%;
+height:100%
+}
+@font-face {
+    font-family: roboto-b;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto-r ;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(51, 47, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 350px;
+    height: 350px;
+    background: white;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vw;
+    border-radius: 20px;
+}
+.center img {
+    height: 50px;
+    width: 50px;
+}
+.center h1 {
+    font-family: roboto-b;
+    font-size:3vw;
+    text-align: left;
+}
+.center p {
+    font-family: roboto-r;
+    font-size: .92vw;
+    text-align: left;
+    width: 94%;
+    font-weight: 500;
+    color: rgb(32, 23, 66);
+}
+p span {
+    color: rgb(63, 14, 224);
+}
+
+.center .btn {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 8px;
+    color: white;
+    background: #230e46;
+    margin-top: 3vh;
+}
+
+form {
+    display: none;
+}
+
+
+@media (max-width:800px) {
+        
+    main{
+        height: 100vh;
+        width: 100vw;
+        background: rgb(51, 47, 66);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center {
+        width: 300px;
+        height: 250px;
+        background: white;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        border-radius: 7px;
+    }
+    .center img {
+        height: 50px;
+        width: 50px;
+    }
+    .center h1 {
+        font-family: roboto-b;
+        font-size:6vw;
+        text-align: left;
+    }
+    .center p {
+        font-family: roboto-r;
+        font-size: 1.7vh;
+        text-align: left;
+        width: 93%;
+        font-weight: 500;
+        color: rgb(32, 23, 66);
+        text-align: center;
+    }
+    p span {
+        color: rgb(63, 14, 224);
+    }
+
+    .center .btn {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 8px;
+        color: white;
+        background: #230e46;
+        margin-top: 3vh;
+    }
+
+    form {
+        display: none;
+    }
+
+}

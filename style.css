@@ -1,0 +1,313 @@
+*{ 
+padding:0;  box-sizing:border-box;
+margin:0;
+box-sizing:border-box
+}
+html , body {
+width:100%;
+height:100%
+}
+@font-face {
+    font-family: roboto-b;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto-r ;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(51, 47, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signup {
+    min-width: 600px;
+    width: 60vw;
+    height: 85vh;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content {
+    padding-inline:4vw ;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 2.4vh;
+    margin-top: 14vh;
+}
+
+.img {
+    width: 40%;
+    height: 100%;
+    padding: 1vw 1vw 1vw 0;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px
+}
+
+.content h1 {
+    width: 100%;
+    font-size: 4vw;
+    font-family: roboto-b;
+    line-height: 4vw;
+    color: rgb(51, 47, 66);
+}
+
+.content p{
+    width: 100%;
+    line-height: 2.4vw;
+    font-family: roboto-r;
+    color: rgb(107, 107, 107);
+    margin-bottom: 1vh;
+}
+
+.content .term{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .6rem;
+
+}
+
+.term p{
+    font-size: .94rem;
+    line-height: 1rem;
+    width: 100%;
+    text-align: left;
+    margin-bottom: .2rem;
+    color: rgb(110, 109, 109);
+}
+
+.content .input {
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.4vh;
+    margin-top: 2vh;
+    position: relative;
+}
+.input label {
+    font-family: roboto-r;
+    color: rgb(40, 40, 40);
+    font-size: .9rem;
+}
+
+.input input {
+    height: 50px;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 8px;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    color: rgb(55, 55, 55);
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
+
+.btn {
+    height: 50px;
+    width: 100%;
+    background: #1b1438;
+    outline: none;
+    border: none;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: roboto-r;
+    font-size: 1.1rem;
+}
+.msg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: roboto-r;
+    color: rgb(225, 19, 19);
+    font-size: .9rem;
+    letter-spacing: -.6px;
+    display: none;
+}
+ .msg.invalid{
+    display: block;
+}
+
+.inputField.invalid-inp {
+    border: 1px solid rgb(225, 19, 19);
+    background: rgba(231, 11, 11, 0.128);
+    color: rgba(255, 0, 0, 0.438);
+}
+/* 
+.input.invalid input::placeholder {
+    color: rgba(225, 19, 19, 0.292);
+} */
+
+form {
+    display: none;
+}
+
+@media (max-width:900px) {
+    main {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .signup {
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .content {
+        width: 100vw;
+        height: 60%;
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        margin: auto;
+        padding: 2vh;
+        padding-left: 2vh;
+        gap: 4vh;
+    }
+
+    .img {
+        width: 90vw;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px
+    }
+
+    
+    .content h1 {
+        width: 100%;
+        font-size: 9vw;
+        font-family: roboto-b;
+        line-height: 4vw;
+        color: rgb(51, 47, 66);
+        text-align: center;
+    }
+
+    .content p{
+        display: none;
+        width: 100%;
+        line-height: 2.4vw;
+        font-family: roboto-r;
+        color: rgb(107, 107, 107);
+        margin-bottom: 1vh;
+    }
+
+    .content .term{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .6rem;
+
+    }
+
+    .term p{
+        display: block;
+        font-size: .94rem;
+        line-height: 1rem;
+        width: 100%;
+        text-align: left;
+        margin-bottom: .2rem;
+        color: rgb(110, 109, 109);
+    }
+
+    .content .input {
+        width: 100%;
+        min-height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.4vh;
+        margin-top: 2vh;
+        position: relative;
+    }
+    .input label {
+        font-family: roboto-r;
+        color: rgb(40, 40, 40);
+        font-size: .9rem;
+    }
+
+    .input input {
+        height: 50px;
+        width: 100%;
+        background: none;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 8px;
+        padding-inline: 1rem;
+        font-size: 1rem;
+        color: rgb(55, 55, 55);
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+    }
+
+    .btn {
+        height: 50px;
+        width: 100%;
+        background: #1b1438;
+        outline: none;
+        border: none;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 8px;
+        font-family: roboto-r;
+        font-size: 1.1rem;
+    }
+    .msg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: roboto-r;
+        color: rgb(225, 19, 19);
+        font-size: .9rem;
+        letter-spacing: -.6px;
+        display: none;
+    }
+
+
+}
